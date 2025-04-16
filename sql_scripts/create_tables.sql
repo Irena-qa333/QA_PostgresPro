@@ -9,12 +9,14 @@ CREATE TABLE Students (
     ),
     email VARCHAR(255) UNIQUE
 );
+
 -- Таблица Courses
 CREATE TABLE Courses (
     c_no INT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     hours SMALLINT CHECK (hours > 0)
 );
+
 -- Таблица Exams
 CREATE TABLE Exams (
     s_id INT,
